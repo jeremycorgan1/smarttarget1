@@ -10,4 +10,3 @@ Modified the MainActivity.kt to include face detection and drawing the box 7/29/
 
 ---------Would Likes Below-------------
 Would like to implement edge case on target box shrinking for modifier on distance from phone, for accuracy.
-Signal source broadcast from phone to raspberry pi for communication to activate actuator controlled by raspberry pi.

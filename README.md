@@ -5,6 +5,7 @@ Implementation with Camera Preview Using CameraX, created a layout file with it 
 MainActivity.kt a set up the CameraX preview was made 7/29/2024 JC
 Modified the MainActivity.kt to include face detection and drawing the box 7/29/2024 JC
 7/31/2024 OpenCV implementation for laser pointer recognition 
+7/31/2024 added support for Raspberry Pi 5
 
 
 ---------Would Likes Below-------------

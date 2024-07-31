@@ -1,0 +1,18 @@
+Setup Raspberry Pi
+Enable Bluetooth: Ensure Bluetooth is enabled on your Raspberry Pi.
+
+Install Bluetooth Packages:
+
+sh
+Copy code
+sudo apt-get update
+sudo apt-get install bluetooth bluez python-bluez
+Pair the Raspberry Pi with the Android Device:
+
+On the Raspberry Pi, use the following commands to pair:
+sh
+Copy code
+bluetoothctl
+agent on
+scan on
+On the Android device, go to Bluetooth settings and pair with the Raspberry Pi when it appears.

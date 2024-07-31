@@ -5,6 +5,9 @@ pluginManagement {
         gradlePluginPortal()
     }
 }
+dependencies {
+    implementation 'org.openpnp:opencv:4.10.0'
+}
 dependencyResolutionManagement {
     repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
     repositories {

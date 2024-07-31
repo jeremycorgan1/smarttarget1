@@ -4,3 +4,12 @@ plugins {
     id 'com.android.library' version '8.0.2' apply false
     id 'org.jetbrains.kotlin.android' version '1.8.20' apply false
 }
+task copyOpenCVLibs(type: Copy) {
+    from fileTree(dir: "C:\\Users\\sarah\\Desktop\\opencv-4.10.0-android-sdk\\OpenCV-android-sdk\\sdk\\java")
+    into "$buildDir/libs"
+}
+
+tasks.withType(JavaCompile) {
+    options.compilerArgs += ['-Djava.library.path=C:\\Users\\sarah\\Desktop\\opencv-4.10.0-android-sdk\\OpenCV-android-sdk\\sdk\\native\\libs']
+    dependsOn copyOpenCVLibs
+}
